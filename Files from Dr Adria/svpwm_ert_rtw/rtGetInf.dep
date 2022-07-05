@@ -1,0 +1,7 @@
+rtGetInf.obj: C:/Users/adria/Desktop/motor_driver/svpwm_ert_rtw/rtGetInf.c
+rtGetInf.obj: C:\Users\adria\Desktop\motor_driver\svpwm_ert_rtw\rtGetInf.h
+rtGetInf.obj: C:/PROGRA~3/MATLAB/SUPPOR~1/R2020b/3P778C~1.INS/TIC200~1.INS/TI-CGT~1.LTS/include/stddef.h
+rtGetInf.obj: C:/PROGRA~3/MATLAB/SUPPOR~1/R2020b/3P778C~1.INS/TIC200~1.INS/TI-CGT~1.LTS/include/_ti_config.h
+rtGetInf.obj: C:/PROGRA~3/MATLAB/SUPPOR~1/R2020b/3P778C~1.INS/TIC200~1.INS/TI-CGT~1.LTS/include/linkage.h
+rtGetInf.obj: C:\Users\adria\Desktop\motor_driver\svpwm_ert_rtw\rtwtypes.h
+rtGetInf.obj: C:\Users\adria\Desktop\motor_driver\svpwm_ert_rtw\rt_nonfinite.h
