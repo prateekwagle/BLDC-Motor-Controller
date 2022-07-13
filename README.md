@@ -1,5 +1,5 @@
 # BLDC-Motor-Controller
-12-week UROP supervised by Dr Adria Junyent Ferre which looks at developing a motor controller for a BLDC motor using a TI Delfino F28379D Launchpad and a Boostxl-drv8305.
+Year 2 UROP supervised by Dr Adria Junyent Ferre which looks at developing a motor controller for a BLDC motor using a TI Delfino F28379D Launchpad and a Boostxl-drv8305.
 
 IMPORTANT:
 
