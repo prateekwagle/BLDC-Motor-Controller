@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'svpwm3'.
  *
- * Model version                  : 1.10
- * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Tue Jul  5 13:16:51 2022
+ * Model version                  : 1.9
+ * Simulink Coder version         : 9.4 (R2020b) 29-Jul-2020
+ * C/C++ source code generated on : Fri Jun 24 15:25:55 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -19,6 +19,9 @@
 
 #ifndef RTW_HEADER_svpwm3_h_
 #define RTW_HEADER_svpwm3_h_
+#include <float.h>
+#include <string.h>
+#include <stddef.h>
 #ifndef svpwm3_COMMON_INCLUDES_
 #define svpwm3_COMMON_INCLUDES_
 #include "rtwtypes.h"
@@ -27,14 +30,16 @@
 #include "dt_info.h"
 #include "ext_work.h"
 #include "c2000BoardSupport.h"
-#include "MW_f2837xD_includes.h"
+#include "F2837xD_device.h"
+#include "F2837xD_Examples.h"
 #include "IQmathLib.h"
+#include "F2837xD_gpio.h"
 #endif                                 /* svpwm3_COMMON_INCLUDES_ */
 
 #include "svpwm3_types.h"
-#include <float.h>
-#include <string.h>
-#include <stddef.h>
+
+/* Shared type includes */
+#include "multiword_types.h"
 #include "MW_target_hardware_resources.h"
 
 /* Macros for accessing real-time model data structure */
@@ -79,8 +84,6 @@
 #endif
 
 extern void config_ePWM_GPIO (void);
-extern void config_ePWM_XBAR(void);
-extern void configureIXbar(void);
 
 /* Block signals (default storage) */
 typedef struct {

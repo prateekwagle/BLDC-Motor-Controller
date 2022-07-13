@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'svpwm3'.
  *
- * Model version                  : 1.10
- * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Tue Jul  5 13:16:51 2022
+ * Model version                  : 1.9
+ * Simulink Coder version         : 9.4 (R2020b) 29-Jul-2020
+ * C/C++ source code generated on : Fri Jun 24 15:25:55 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -19,7 +19,6 @@
 
 #include "svpwm3.h"
 #include "svpwm3_private.h"
-#include "rtwtypes.h"
 #include "svpwm3_dt.h"
 
 /* Block signals (default storage) */
@@ -31,24 +30,9 @@ DW_svpwm3_T svpwm3_DW;
 /* Real-time model */
 static RT_MODEL_svpwm3_T svpwm3_M_;
 RT_MODEL_svpwm3_T *const svpwm3_M = &svpwm3_M_;
-
-#ifndef __TMS320C28XX_CLA__
-
 uint16_T MW_adcAInitFlag = 0;
-
-#endif
-
-#ifndef __TMS320C28XX_CLA__
-
 uint16_T MW_adcBInitFlag = 0;
-
-#endif
-
-#ifndef __TMS320C28XX_CLA__
-
 uint16_T MW_adcCInitFlag = 0;
-
-#endif
 
 /* Hardware Interrupt Block: '<Root>/C28x Hardware Interrupt' */
 void isr_int1pie1_task_fcn(void)
@@ -62,72 +46,83 @@ void isr_int1pie1_task_fcn(void)
       /* S-Function (c28xisr_c2000): '<Root>/C28x Hardware Interrupt' */
 
       /* Output and update for function-call system: '<Root>/Function-Call Subsystem' */
-
-      /* Asynchronous task reads absolute time. Data (absolute time)
-         transfers from low priority task (base rate) to high priority
-         task (asynchronous rate). Double buffers are used to ensure
-         data integrity.
-         -- rtmL2HLastBufWr is the buffer index that is written last.
-       */
-      svpwm3_M->Timing.clockTick1 = svpwm3_M->
-        Timing.rtmL2HDbBufClockTick[svpwm3_M->Timing.rtmL2HLastBufWr];
-
-      /* S-Function (c2802xadc): '<S1>/ADC' */
       {
-        /*  Internal Reference Voltage : Fixed scale 0 to 3.3 V range.  */
-        /*  External Reference Voltage : Allowable ranges of VREFHI(ADCINA0) = 3.3 and VREFLO(tied to ground) = 0  */
-        svpwm3_B.ADC = (AdcaResultRegs.ADCRESULT0);
+        /* local block i/o variables */
+        uint32_T rtb_DataStoreRead2;
+
+        /* Asynchronous task reads absolute time. Data (absolute time)
+           transfers from low priority task (base rate) to high priority
+           task (asynchronous rate). Double buffers are used to ensure
+           data integrity.
+           -- rtmL2HLastBufWr is the buffer index that is written last.
+         */
+        svpwm3_M->Timing.clockTick1 = svpwm3_M->
+          Timing.rtmL2HDbBufClockTick[svpwm3_M->Timing.rtmL2HLastBufWr];
+
+        /* S-Function (c2802xadc): '<S1>/ADC' */
+        {
+          /*  Internal Reference Voltage : Fixed scale 0 to 3.3 V range.  */
+          /*  External Reference Voltage : Allowable ranges of VREFHI(ADCINA0) = 3.3 and VREFLO(tied to ground) = 0  */
+          svpwm3_B.ADC = (AdcaResultRegs.ADCRESULT0);
+        }
+
+        /* S-Function (c2802xadc): '<S1>/ADC1' */
+        {
+          /*  Internal Reference Voltage : Fixed scale 0 to 3.3 V range.  */
+          /*  External Reference Voltage : Allowable ranges of VREFHI(ADCINA0) = 3.3 and VREFLO(tied to ground) = 0  */
+          svpwm3_B.ADC1 = (AdcbResultRegs.ADCRESULT0);
+        }
+
+        /* S-Function (c2802xadc): '<S1>/ADC2' */
+        {
+          /*  Internal Reference Voltage : Fixed scale 0 to 3.3 V range.  */
+          /*  External Reference Voltage : Allowable ranges of VREFHI(ADCINA0) = 3.3 and VREFLO(tied to ground) = 0  */
+          svpwm3_B.ADC2 = (AdccResultRegs.ADCRESULT0);
+        }
+
+        /* DataStoreRead: '<S1>/Data Store Read2' incorporates:
+         *  DataStoreRead: '<S1>/Data Store Read'
+         */
+        rtb_DataStoreRead2 = svpwm3_DW.A;
+
+        /* S-Function (c2802xpwm): '<S1>/ePWM' */
+
+        /*-- Update CMPA value for ePWM4 --*/
+        {
+          EPwm4Regs.CMPA.bit.CMPA = (uint16_T)(rtb_DataStoreRead2);
+        }
+
+        /* DataStoreRead: '<S1>/Data Store Read2' incorporates:
+         *  DataStoreRead: '<S1>/Data Store Read1'
+         */
+        rtb_DataStoreRead2 = svpwm3_DW.B;
+
+        /* S-Function (c2802xpwm): '<S1>/ePWM1' */
+
+        /*-- Update CMPA value for ePWM5 --*/
+        {
+          EPwm5Regs.CMPA.bit.CMPA = (uint16_T)(rtb_DataStoreRead2);
+        }
+
+        /* DataStoreRead: '<S1>/Data Store Read2' */
+        rtb_DataStoreRead2 = svpwm3_DW.C;
+
+        /* S-Function (c2802xpwm): '<S1>/ePWM2' */
+
+        /*-- Update CMPA value for ePWM6 --*/
+        {
+          EPwm6Regs.CMPA.bit.CMPA = (uint16_T)(rtb_DataStoreRead2);
+        }
+
+        /* S-Function (c280xgpio_do): '<S1>/Digital Output' incorporates:
+         *  Constant: '<S1>/Enable Gate'
+         */
+        {
+          GpioDataRegs.GPBTOGGLE.bit.GPIO52 = (svpwm3_P.EnableGate_Value != 0);
+        }
+
+        svpwm3_DW.FunctionCallSubsystem_SubsysRan = 4;
       }
-
-      /* S-Function (c2802xadc): '<S1>/ADC1' */
-      {
-        /*  Internal Reference Voltage : Fixed scale 0 to 3.3 V range.  */
-        /*  External Reference Voltage : Allowable ranges of VREFHI(ADCINA0) = 3.3 and VREFLO(tied to ground) = 0  */
-        svpwm3_B.ADC1 = (AdcbResultRegs.ADCRESULT0);
-      }
-
-      /* S-Function (c2802xadc): '<S1>/ADC2' */
-      {
-        /*  Internal Reference Voltage : Fixed scale 0 to 3.3 V range.  */
-        /*  External Reference Voltage : Allowable ranges of VREFHI(ADCINA0) = 3.3 and VREFLO(tied to ground) = 0  */
-        svpwm3_B.ADC2 = (AdccResultRegs.ADCRESULT0);
-      }
-
-      /* S-Function (c2802xpwm): '<S1>/ePWM' incorporates:
-       *  DataStoreRead: '<S1>/Data Store Read'
-       */
-
-      /*-- Update CMPA value for ePWM4 --*/
-      {
-        EPwm4Regs.CMPA.bit.CMPA = (uint16_T)(svpwm3_DW.A);
-      }
-
-      /* S-Function (c2802xpwm): '<S1>/ePWM1' incorporates:
-       *  DataStoreRead: '<S1>/Data Store Read1'
-       */
-
-      /*-- Update CMPA value for ePWM5 --*/
-      {
-        EPwm5Regs.CMPA.bit.CMPA = (uint16_T)(svpwm3_DW.B);
-      }
-
-      /* S-Function (c2802xpwm): '<S1>/ePWM2' incorporates:
-       *  DataStoreRead: '<S1>/Data Store Read2'
-       */
-
-      /*-- Update CMPA value for ePWM6 --*/
-      {
-        EPwm6Regs.CMPA.bit.CMPA = (uint16_T)(svpwm3_DW.C);
-      }
-
-      /* S-Function (c280xgpio_do): '<S1>/Digital Output' incorporates:
-       *  Constant: '<S1>/Enable Gate'
-       */
-      {
-        GpioDataRegs.GPBTOGGLE.bit.GPIO52 = (svpwm3_P.EnableGate_Value != 0);
-      }
-
-      svpwm3_DW.FunctionCallSubsystem_SubsysRan = 4;
 
       /* End of Outputs for S-Function (c28xisr_c2000): '<Root>/C28x Hardware Interrupt' */
     }
@@ -217,9 +212,9 @@ void svpwm3_step(void)
        time.
        -- rtmL2HLastBufWr is the buffer index that is written last.
      */
-    boolean_T bufIdx = !(svpwm3_M->Timing.rtmL2HLastBufWr != 0U);
+    boolean_T bufIdx = !svpwm3_M->Timing.rtmL2HLastBufWr;
     svpwm3_M->Timing.rtmL2HDbBufClockTick[bufIdx] = svpwm3_M->Timing.clockTick0;
-    svpwm3_M->Timing.rtmL2HLastBufWr = bufIdx ? 1U : 0U;
+    svpwm3_M->Timing.rtmL2HLastBufWr = bufIdx;
   }
 }
 
@@ -235,10 +230,10 @@ void svpwm3_initialize(void)
   svpwm3_M->Timing.stepSize0 = 0.2;
 
   /* External mode info */
-  svpwm3_M->Sizes.checksums[0] = (449806343U);
-  svpwm3_M->Sizes.checksums[1] = (3275409047U);
-  svpwm3_M->Sizes.checksums[2] = (2655490026U);
-  svpwm3_M->Sizes.checksums[3] = (346896529U);
+  svpwm3_M->Sizes.checksums[0] = (2972385075U);
+  svpwm3_M->Sizes.checksums[1] = (3026578370U);
+  svpwm3_M->Sizes.checksums[2] = (558792006U);
+  svpwm3_M->Sizes.checksums[3] = (3457311491U);
 
   {
     static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE;
@@ -268,7 +263,7 @@ void svpwm3_initialize(void)
     (void) memset((char_T *) &dtInfo, 0,
                   sizeof(dtInfo));
     svpwm3_M->SpecialInfo.mappingInfo = (&dtInfo);
-    dtInfo.numDataTypes = 22;
+    dtInfo.numDataTypes = 14;
     dtInfo.dataTypeSizes = &rtDataTypeSizes[0];
     dtInfo.dataTypeNames = &rtDataTypeNames[0];
 
@@ -436,9 +431,9 @@ void svpwm3_initialize(void)
        EPwm4Regs.DBCTL.bit.LOADFEDMODE          = 4U;        // DBFED load
      */
     EPwm4Regs.DBCTL.all = (EPwm4Regs.DBCTL.all & ~0x8FFF) | 0xB;
-    EPwm4Regs.DBRED.bit.DBRED = (uint16_T)(10.0);
+    EPwm4Regs.DBRED.bit.DBRED = 10;
                          // Dead-Band Generator Rising Edge Delay Count Register
-    EPwm4Regs.DBFED.bit.DBFED = (uint16_T)(10.0);
+    EPwm4Regs.DBFED.bit.DBFED = 10;
                         // Dead-Band Generator Falling Edge Delay Count Register
 
     /*-- Setup Event-Trigger (ET) Submodule --*/
@@ -656,9 +651,9 @@ void svpwm3_initialize(void)
        EPwm5Regs.DBCTL.bit.LOADFEDMODE          = 4U;        // DBFED load
      */
     EPwm5Regs.DBCTL.all = (EPwm5Regs.DBCTL.all & ~0x8FFF) | 0xB;
-    EPwm5Regs.DBRED.bit.DBRED = (uint16_T)(10.0);
+    EPwm5Regs.DBRED.bit.DBRED = 10;
                          // Dead-Band Generator Rising Edge Delay Count Register
-    EPwm5Regs.DBFED.bit.DBFED = (uint16_T)(10.0);
+    EPwm5Regs.DBFED.bit.DBFED = 10;
                         // Dead-Band Generator Falling Edge Delay Count Register
 
     /*-- Setup Event-Trigger (ET) Submodule --*/
@@ -877,9 +872,9 @@ void svpwm3_initialize(void)
        EPwm6Regs.DBCTL.bit.LOADFEDMODE          = 4U;        // DBFED load
      */
     EPwm6Regs.DBCTL.all = (EPwm6Regs.DBCTL.all & ~0x8FFF) | 0xB;
-    EPwm6Regs.DBRED.bit.DBRED = (uint16_T)(10.0);
+    EPwm6Regs.DBRED.bit.DBRED = 10;
                          // Dead-Band Generator Rising Edge Delay Count Register
-    EPwm6Regs.DBFED.bit.DBFED = (uint16_T)(10.0);
+    EPwm6Regs.DBFED.bit.DBFED = 10;
                         // Dead-Band Generator Falling Edge Delay Count Register
 
     /*-- Setup Event-Trigger (ET) Submodule --*/
@@ -1025,7 +1020,6 @@ void svpwm3_initialize(void)
   GpioCtrlRegs.GPBMUX2.all &= 0xFFFFFCFF;
   GpioCtrlRegs.GPBDIR.all |= 0x100000;
   EDIS;
-  ;
 
   /* End of SystemInitialize for S-Function (c28xisr_c2000): '<Root>/C28x Hardware Interrupt' */
 }

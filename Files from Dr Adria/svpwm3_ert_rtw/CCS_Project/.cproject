@@ -22,55 +22,49 @@
 <listOptionValue builtIn="false" value="OUTPUT_TYPE=executable">
 </listOptionValue>
 </option>
-<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.9719804" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="20.2.1.LTS" valueType="string">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.9719804" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="18.12.2.LTS" valueType="string">
 </option>
 <tool id="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.compilerDebug.1530137375" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.compilerDebug">
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.INCLUDE_PATH.1515724014" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.INCLUDE_PATH" valueType="includePath">
 <listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Users\EEED Stores 381\Documents\motor_driver">
+<listOptionValue builtIn="false" value="C:\Users\adria\Desktop\motor_driver">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Users\EEED Stores 381\Documents\motor_driver\svpwm3_ert_rtw">
+<listOptionValue builtIn="false" value="C:\Users\adria\Desktop\motor_driver\svpwm3_ert_rtw">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\extern\include">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\extern\include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\simulink\include">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\simulink\include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\rtw\c\src">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\rtw\c\src">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\rtw\c\src\ext_mode\common">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\rtw\c\src\ext_mode\common">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\rtw\c\ert">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\rtw\c\ert">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\toolbox\coder\rtiostream\src">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\toolbox\coder\rtiostream\src">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\toolbox\coder\rtiostream\src\utils">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\toolbox\coder\rtiostream\src\utils">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2022a\toolbox\target\supportpackages\tic2000\inc">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\supportpackages\tic2000\inc">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\toolbox\shared\can\src\scanutil">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\toolbox\shared\can\src\scanutil">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2022a\toolbox\target\supportpackages\tic2000\src">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\supportpackages\tic2000\src">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2022a\toolbox\shared\supportpackages\tic2000\src">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\shared\supportpackages\tic2000\src">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2022a\toolbox\shared\supportpackages\tic2000\inc">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\shared\supportpackages\tic2000\inc">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ti\c2000\C2000Ware_4_00_00_00\libraries\calibration\hrpwm\f2837xd\include">
+<listOptionValue builtIn="false" value="C:\ti\controlSUITE\device_support\F2837xD\v190\F2837xD_common\include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ti\c2000\C2000Ware_4_00_00_00\driverlib\f2837xd\driverlib">
+<listOptionValue builtIn="false" value="C:\ti\controlSUITE\device_support\F2837xD\v190\F2837xD_headers\include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ti\c2000\C2000Ware_4_00_00_00\driverlib\f2837xd\driverlib\inc">
+<listOptionValue builtIn="false" value="C:\ti\controlSUITE\device_support\F2837xD\v190\F2837xD_common">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ti\c2000\C2000Ware_4_00_00_00\device_support\f2837xd\common\include">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\shared\externalmode_daemon\include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ti\c2000\C2000Ware_4_00_00_00\device_support\f2837xd\headers\include">
-</listOptionValue>
-<listOptionValue builtIn="false" value="C:\ti\c2000\C2000Ware_4_00_00_00\device_support\f2837xd\common">
-</listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2022a\toolbox\target\shared\externalmode_daemon\include">
-</listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\toolbox\rtw\targets\common\can\blocks\tlc_c">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\toolbox\rtw\targets\common\can\blocks\tlc_c">
 </listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.DEFINE.1045084510" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.DEFINE" valueType="definedSymbols">
@@ -110,8 +104,6 @@
 </listOptionValue>
 <listOptionValue builtIn="false" value="XCP_CUSTOM_PLATFORM">
 </listOptionValue>
-<listOptionValue builtIn="false" value="EXTMODE_DISABLE_ARGS_PROCESSING=1">
-</listOptionValue>
 <listOptionValue builtIn="false" value="MW_PIL_SCIFIFOLEN=16">
 </listOptionValue>
 <listOptionValue builtIn="false" value="F2837X_REG_FORMAT">
@@ -130,21 +122,9 @@
 </listOptionValue>
 <listOptionValue builtIn="false" value="BOOT_FROM_FLASH=1">
 </listOptionValue>
-<listOptionValue builtIn="false" value="CPU_RAMLS_PROG_START=0x8000">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CPU_RAMLS_PROG_LENGTH=0x1800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_PROG_START=0xA800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_PROG_LENGTH=0x800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_DATA_START=0x9800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_DATA_LENGTH=0x1000">
-</listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS.1292182979" name="Other flags" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS" valueType="stringList">
-<listOptionValue builtIn="false" value=" --abi=coffabi -s -v28 -ml --abi=coffabi  --preproc_dependency=$(@:%.obj=%.dep) --preproc_with_compile  --large_memory_model -I$(F28_HEADERS)/include -I$(TI_INCLUDE) -v28 --float_support=fpu32 -ml -DF28379D -DCPU1 -DBOOT_FROM_FLASH=1 --tmu_support=tmu0 --fp_mode=relaxed  --define=EXTMODE_DISABLEPRINTF  -DCPU_RAMLS_PROG_START=0x8000 -DCPU_RAMLS_PROG_LENGTH=0x1800 -DCLA_RAMLS_PROG_START=0xA800 -DCLA_RAMLS_PROG_LENGTH=0x800 -DCLA_RAMLS_DATA_START=0x9800 -DCLA_RAMLS_DATA_LENGTH=0x1000">
+<listOptionValue builtIn="false" value=" -s -v28 -ml  --preproc_dependency=$(@:%.obj=%.dep) --preproc_with_compile  --large_memory_model --silicon_version=28 -I$(TI_INCLUDE) -v28 --float_support=fpu32 -ml -DF28379D -DCPU1 -DBOOT_FROM_FLASH=1 --tmu_support=tmu0 --fp_mode=relaxed  --define=EXTMODE_DISABLEPRINTF ">
 </listOptionValue>
 </option>
 </tool>
@@ -156,11 +136,11 @@
 </listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.LIBRARY.1472299698" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.LIBRARY" valueType="libs">
-<listOptionValue builtIn="false" value="C:\ti\c2000\C2000Ware_4_00_00_00\libraries\math\IQmath\c28\lib\IQmath_fpu32.lib">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\shared\supportpackages\tic2000\rtlib\IQmath_fpu32.lib">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2022a\toolbox\shared\supportpackages\tic2000\src\c2837xDPeripherals.cmd">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\shared\supportpackages\tic2000\src\c2837xDPeripherals.cmd">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2022a\toolbox\target\supportpackages\tic2000\src\c28377D.cmd">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\supportpackages\tic2000\src\c28377D.cmd">
 </listOptionValue>
 <listOptionValue builtIn="false" value="rts2800_fpu32.lib">
 </listOptionValue>
@@ -174,21 +154,9 @@
 </listOptionValue>
 <listOptionValue builtIn="false" value="BOOT_USING_BL=0">
 </listOptionValue>
-<listOptionValue builtIn="false" value="CPU_RAMLS_PROG_START=0x8000">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CPU_RAMLS_PROG_LENGTH=0x1800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_PROG_START=0xA800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_PROG_LENGTH=0x800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_DATA_START=0x9800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_DATA_LENGTH=0x1000">
-</listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OTHER_FLAGS.14752160" name="Other flags" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OTHER_FLAGS" valueType="stringList">
-<listOptionValue builtIn="false" value="  --stack_size=1024 --warn_sections --heap_size=1024 --reread_libs --rom_model --priority -msvpwm3.map ">
+<listOptionValue builtIn="false" value=" -z  --stack_size=1024 --warn_sections --heap_size=1024 --reread_libs --rom_model --priority -msvpwm3.map">
 </listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OUTPUT_FILE.1457437285" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OUTPUT_FILE" value="${ProjName}.out" valueType="string">
@@ -226,55 +194,49 @@
 <listOptionValue builtIn="false" value="OUTPUT_TYPE=executable">
 </listOptionValue>
 </option>
-<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1784128076" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="20.2.1.LTS" valueType="string">
+<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1784128076" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="18.12.2.LTS" valueType="string">
 </option>
 <tool id="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.compilerRelease.1180404667" name="C2000 Compiler" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.exe.compilerRelease">
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.INCLUDE_PATH.899964030" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.INCLUDE_PATH" valueType="includePath">
 <listOptionValue builtIn="false" value="${CG_TOOL_ROOT}/include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Users\EEED Stores 381\Documents\motor_driver">
+<listOptionValue builtIn="false" value="C:\Users\adria\Desktop\motor_driver">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Users\EEED Stores 381\Documents\motor_driver\svpwm3_ert_rtw">
+<listOptionValue builtIn="false" value="C:\Users\adria\Desktop\motor_driver\svpwm3_ert_rtw">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\extern\include">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\extern\include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\simulink\include">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\simulink\include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\rtw\c\src">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\rtw\c\src">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\rtw\c\src\ext_mode\common">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\rtw\c\src\ext_mode\common">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\rtw\c\ert">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\rtw\c\ert">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\toolbox\coder\rtiostream\src">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\toolbox\coder\rtiostream\src">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\toolbox\coder\rtiostream\src\utils">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\toolbox\coder\rtiostream\src\utils">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2022a\toolbox\target\supportpackages\tic2000\inc">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\supportpackages\tic2000\inc">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\toolbox\shared\can\src\scanutil">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\toolbox\shared\can\src\scanutil">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2022a\toolbox\target\supportpackages\tic2000\src">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\supportpackages\tic2000\src">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2022a\toolbox\shared\supportpackages\tic2000\src">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\shared\supportpackages\tic2000\src">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2022a\toolbox\shared\supportpackages\tic2000\inc">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\shared\supportpackages\tic2000\inc">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ti\c2000\C2000Ware_4_00_00_00\libraries\calibration\hrpwm\f2837xd\include">
+<listOptionValue builtIn="false" value="C:\ti\controlSUITE\device_support\F2837xD\v190\F2837xD_common\include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ti\c2000\C2000Ware_4_00_00_00\driverlib\f2837xd\driverlib">
+<listOptionValue builtIn="false" value="C:\ti\controlSUITE\device_support\F2837xD\v190\F2837xD_headers\include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ti\c2000\C2000Ware_4_00_00_00\driverlib\f2837xd\driverlib\inc">
+<listOptionValue builtIn="false" value="C:\ti\controlSUITE\device_support\F2837xD\v190\F2837xD_common">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ti\c2000\C2000Ware_4_00_00_00\device_support\f2837xd\common\include">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\shared\externalmode_daemon\include">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ti\c2000\C2000Ware_4_00_00_00\device_support\f2837xd\headers\include">
-</listOptionValue>
-<listOptionValue builtIn="false" value="C:\ti\c2000\C2000Ware_4_00_00_00\device_support\f2837xd\common">
-</listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2022a\toolbox\target\shared\externalmode_daemon\include">
-</listOptionValue>
-<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2022a\toolbox\rtw\targets\common\can\blocks\tlc_c">
+<listOptionValue builtIn="false" value="C:\Program Files\MATLAB\R2020b\toolbox\rtw\targets\common\can\blocks\tlc_c">
 </listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.DEFINE.1616953459" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.DEFINE" valueType="definedSymbols">
@@ -314,8 +276,6 @@
 </listOptionValue>
 <listOptionValue builtIn="false" value="XCP_CUSTOM_PLATFORM">
 </listOptionValue>
-<listOptionValue builtIn="false" value="EXTMODE_DISABLE_ARGS_PROCESSING=1">
-</listOptionValue>
 <listOptionValue builtIn="false" value="MW_PIL_SCIFIFOLEN=16">
 </listOptionValue>
 <listOptionValue builtIn="false" value="F2837X_REG_FORMAT">
@@ -334,21 +294,9 @@
 </listOptionValue>
 <listOptionValue builtIn="false" value="BOOT_FROM_FLASH=1">
 </listOptionValue>
-<listOptionValue builtIn="false" value="CPU_RAMLS_PROG_START=0x8000">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CPU_RAMLS_PROG_LENGTH=0x1800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_PROG_START=0xA800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_PROG_LENGTH=0x800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_DATA_START=0x9800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_DATA_LENGTH=0x1000">
-</listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS.1292182979" name="Other flags" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.compilerID.OTHER_FLAGS" valueType="stringList">
-<listOptionValue builtIn="false" value=" --abi=coffabi -s -v28 -ml --abi=coffabi  --preproc_dependency=$(@:%.obj=%.dep) --preproc_with_compile  --large_memory_model -I$(F28_HEADERS)/include -I$(TI_INCLUDE) -v28 --float_support=fpu32 -ml -DF28379D -DCPU1 -DBOOT_FROM_FLASH=1 --tmu_support=tmu0 --fp_mode=relaxed  --define=EXTMODE_DISABLEPRINTF  -DCPU_RAMLS_PROG_START=0x8000 -DCPU_RAMLS_PROG_LENGTH=0x1800 -DCLA_RAMLS_PROG_START=0xA800 -DCLA_RAMLS_PROG_LENGTH=0x800 -DCLA_RAMLS_DATA_START=0x9800 -DCLA_RAMLS_DATA_LENGTH=0x1000">
+<listOptionValue builtIn="false" value=" -s -v28 -ml  --preproc_dependency=$(@:%.obj=%.dep) --preproc_with_compile  --large_memory_model --silicon_version=28 -I$(TI_INCLUDE) -v28 --float_support=fpu32 -ml -DF28379D -DCPU1 -DBOOT_FROM_FLASH=1 --tmu_support=tmu0 --fp_mode=relaxed  --define=EXTMODE_DISABLEPRINTF ">
 </listOptionValue>
 </option>
 </tool>
@@ -360,11 +308,11 @@
 </listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.LIBRARY.584832647" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.LIBRARY" valueType="libs">
-<listOptionValue builtIn="false" value="C:\ti\c2000\C2000Ware_4_00_00_00\libraries\math\IQmath\c28\lib\IQmath_fpu32.lib">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\shared\supportpackages\tic2000\rtlib\IQmath_fpu32.lib">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2022a\toolbox\shared\supportpackages\tic2000\src\c2837xDPeripherals.cmd">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\shared\supportpackages\tic2000\src\c2837xDPeripherals.cmd">
 </listOptionValue>
-<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2022a\toolbox\target\supportpackages\tic2000\src\c28377D.cmd">
+<listOptionValue builtIn="false" value="C:\ProgramData\MATLAB\SupportPackages\R2020b\toolbox\target\supportpackages\tic2000\src\c28377D.cmd">
 </listOptionValue>
 <listOptionValue builtIn="false" value="rts2800_fpu32.lib">
 </listOptionValue>
@@ -378,21 +326,9 @@
 </listOptionValue>
 <listOptionValue builtIn="false" value="BOOT_USING_BL=0">
 </listOptionValue>
-<listOptionValue builtIn="false" value="CPU_RAMLS_PROG_START=0x8000">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CPU_RAMLS_PROG_LENGTH=0x1800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_PROG_START=0xA800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_PROG_LENGTH=0x800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_DATA_START=0x9800">
-</listOptionValue>
-<listOptionValue builtIn="false" value="CLA_RAMLS_DATA_LENGTH=0x1000">
-</listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OTHER_FLAGS.14752160" name="Other flags" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OTHER_FLAGS" valueType="stringList">
-<listOptionValue builtIn="false" value="  --stack_size=1024 --warn_sections --heap_size=1024 --reread_libs --rom_model --priority -msvpwm3.map ">
+<listOptionValue builtIn="false" value=" -z  --stack_size=1024 --warn_sections --heap_size=1024 --reread_libs --rom_model --priority -msvpwm3.map">
 </listOptionValue>
 </option>
 <option id="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OUTPUT_FILE.1598482650" superClass="com.ti.ccstudio.buildDefinitions.C2000_6.4.linkerID.OUTPUT_FILE" value="${ProjName}.out" valueType="string">

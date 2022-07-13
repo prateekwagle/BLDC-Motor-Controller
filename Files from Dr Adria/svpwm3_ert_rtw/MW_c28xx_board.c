@@ -1,8 +1,11 @@
 #include "c2000BoardSupport.h"
-#include "MW_f2837xD_includes.h"
+#include "F2837xD_device.h"
+#include "F2837xD_Examples.h"
+#include "F2837xD_GlobalPrototypes.h"
 #include "rtwtypes.h"
 #include "svpwm3.h"
 #include "svpwm3_private.h"
+#include "F2837xD_Ipc_drivers.h"
 
 void init_board ()
 {
@@ -226,7 +229,6 @@ void init_board ()
   /* Disable TBCLK within ePWM before module configuration */
   CpuSysRegs.PCLKCR0.bit.TBCLKSYNC = 0;
   EDIS;
-  configureIXbar();
 
 #ifdef CPU1
 

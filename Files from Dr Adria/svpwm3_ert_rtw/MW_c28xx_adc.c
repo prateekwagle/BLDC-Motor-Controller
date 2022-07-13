@@ -1,5 +1,7 @@
 #include "c2000BoardSupport.h"
-#include "MW_f2837xD_includes.h"
+#include "F2837xD_device.h"
+#include "F2837xD_Examples.h"
+#include "F2837xD_GlobalPrototypes.h"
 #include "rtwtypes.h"
 #include "svpwm3.h"
 #include "svpwm3_private.h"

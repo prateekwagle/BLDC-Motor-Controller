@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'svpwm3'.
  *
- * Model version                  : 1.10
- * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Tue Jul  5 13:16:51 2022
+ * Model version                  : 1.9
+ * Simulink Coder version         : 9.4 (R2020b) 29-Jul-2020
+ * C/C++ source code generated on : Fri Jun 24 15:25:55 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -18,6 +18,7 @@
  */
 
 #include "svpwm3.h"
+#include "svpwm3_private.h"
 
 /* Block parameters (default storage) */
 P_svpwm3_T svpwm3_P = {
@@ -29,7 +30,7 @@ P_svpwm3_T svpwm3_P = {
   /* Computed Parameter: Constant_Value
    * Referenced by: '<Root>/Constant'
    */
-  6385U,
+  8000U,
 
   /* Computed Parameter: Constant1_Value
    * Referenced by: '<Root>/Constant1'

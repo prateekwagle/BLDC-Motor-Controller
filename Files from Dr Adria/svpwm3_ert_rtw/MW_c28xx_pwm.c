@@ -1,5 +1,7 @@
 #include "c2000BoardSupport.h"
-#include "MW_f2837xD_includes.h"
+#include "F2837xD_device.h"
+#include "F2837xD_Examples.h"
+#include "F2837xD_GlobalPrototypes.h"
 #include "rtwtypes.h"
 #include "svpwm3.h"
 #include "svpwm3_private.h"
@@ -26,5 +28,7 @@ void config_ePWM_GPIO (void)
   GpioCtrlRegs.GPAMUX1.bit.GPIO10 = 1; /* Configure GPIOGPIO10 as EPWM6A*/
   GpioCtrlRegs.GPAGMUX1.bit.GPIO11 = 0;
   GpioCtrlRegs.GPAMUX1.bit.GPIO11 = 1; /* Configure GPIOGPIO11 as EPWM6B*/
+
+  /*--- Configure pin assignments for TZn ---*/
   EDIS;
 }

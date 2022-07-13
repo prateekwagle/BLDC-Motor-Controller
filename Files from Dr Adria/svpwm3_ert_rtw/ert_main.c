@@ -7,9 +7,9 @@
  *
  * Code generated for Simulink model 'svpwm3'.
  *
- * Model version                  : 1.10
- * Simulink Coder version         : 9.7 (R2022a) 13-Nov-2021
- * C/C++ source code generated on : Tue Jul  5 13:16:51 2022
+ * Model version                  : 1.9
+ * Simulink Coder version         : 9.4 (R2020b) 29-Jul-2020
+ * C/C++ source code generated on : Fri Jun 24 15:25:55 2022
  *
  * Target selection: ert.tlc
  * Embedded hardware selection: Texas Instruments->C2000
@@ -57,9 +57,9 @@ int main(void)
   c2000_flash_init();
   init_board();
 
-#if defined(MW_EXEC_PROFILER_ON) || defined(MW_EXTMODE_RUNNING)
+#ifdef MW_EXEC_PROFILER_ON
 
-  hardwareTimer1Init();
+  config_profilerTimer();
 
 #endif
 
@@ -87,8 +87,8 @@ int main(void)
   rtERTExtModeStartMsg();
   globalInterruptDisable();
   configureTimer0(modelBaseRate, systemClock);
-  runModel = (rtmGetErrorStatus(svpwm3_M) == (NULL)) && !rtmGetStopRequested
-    (svpwm3_M);
+  runModel =
+    (rtmGetErrorStatus(svpwm3_M) == (NULL)) && !rtmGetStopRequested(svpwm3_M);
   enableTimer0Interrupt();
   enable_interrupts();
   globalInterruptEnable();
@@ -102,15 +102,16 @@ int main(void)
       }
     }
 
-    stopRequested = !((rtmGetErrorStatus(svpwm3_M) == (NULL)) &&
+    stopRequested = !(
+                      (rtmGetErrorStatus(svpwm3_M) == (NULL)) &&
                       !rtmGetStopRequested(svpwm3_M));
     runModel = !(stopRequested);
   }
 
+  /* Disable rt_OneStep() here */
+
   /* Terminate model */
   svpwm3_terminate();
-
-  /* External mode shutdown */
   rtExtModeShutdown(1);
   globalInterruptDisable();
   return 0;
