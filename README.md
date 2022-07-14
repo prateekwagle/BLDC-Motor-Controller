@@ -9,7 +9,7 @@ CCStudio, controlSUITE are required 3rd party software.
 Description of Files:
 
 Initial Tests with Boards:
-- LED Blink Test works (Digital Out). GPIO for 3 In-Built LED is from Datasheet.
+- LED Blink Test works (Digital Out). GPIO for In-Built LEDs is in Datasheet.
 - ADC (Analog In) tested individually using AnalogIn Pin:ADCINA5. Data output from Simulink block is in range 0 to 4095.
 
 Serial Communication:
