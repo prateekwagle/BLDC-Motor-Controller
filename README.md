@@ -1,5 +1,5 @@
 # BLDC-Motor-Controller
-Year 2 UROP conducted by Prateek Wagle and supervised by Dr Adrià Junyent-Ferré which looks at developing a motor controller for a BLDC motor using a TI Delfino F28379D Launchpad and a Boostxl-drv8305. The entire design was implemented using MATLAB Simulink exclusively, with relevant coders needed to programme the evaluation board.
+Year 2 UROP conducted by Prateek Wagle and supervised by Dr Adrià Junyent-Ferré which looks at developing a motor controller based upon Space Vector Pulse-Width Modulation (SVPWM) for a BLDC motor using a TI Delfino F28379D Launchpad and a Boostxl-drv8305. The entire design was implemented using MATLAB Simulink exclusively, with relevant coders needed to programme the evaluation board.
 
 IMPORTANT:
 
