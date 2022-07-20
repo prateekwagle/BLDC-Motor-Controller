@@ -19,4 +19,7 @@ Serial with Encoder:
 - A Protocol Encoder and Decoder module was used to streamline sending multiple data at once via Serial. Works as intended.
 
 Manual PWM with ADC:
-- V and I sense working with PWM controlled manually using sliders.
+- Use of multiple ADCs (on same module) by adjusting SOC (start-of-conversion) and Acquisition window.
+
+Hall Effect Sense with Pos&Vel Tracking:
+- Interface with the hall effect sensors to determine angular velocity and position (with direction information). Lower angular velocity cut-off is 0.35 rad/s (18s for a single revolution).
